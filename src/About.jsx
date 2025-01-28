@@ -5,11 +5,11 @@ const About = () => {
   return (
     <div
       id="About"
-      className="bg-[#0a192f] text-white py-8 sm:py-12 px-4 sm:px-8 md:pr-[100px] md:pl-[250px]"
+      className="bg-[#0a192f] text-white py- sm:py-10 px-4 sm:px-8 md:pr-[100px] md:pl-[250px]"
     >
       <div>
         {/* Title Section */}
-        <div className="mb-8 flex justify-center sm:justify-start lg:ml-[370px]">
+        <div className="mb-8 flex justify-center sm:justify-start lg:ml-[370px] ">
           <h3 className="text-2xl sm:text-3xl font-bold border-b-4 border-white-500 inline-block">
             About
           </h3>
@@ -28,17 +28,18 @@ const About = () => {
 
           {/* Description Section */}
           <motion.div
-            initial={{ y: "100%" }} // Start off-screen to the right
-            whileInView={{ y: 0 }} // Animate to its final position when in view
+            initial={{ y: "25%" }} // Start off-screen to the right
+            whileInView={{ y: 10 }} // Animate to its final position when in view
             viewport={{ once: false, amount: 0.5 }}// Trigger animation once, when 50% of the text is in view
             transition={{
               type: "spring",
               stiffness: 50,
               damping: 20,
               duration: 1,
+                delay: 0.2
             }} // Smooth spring animation
           >
-            <h4 className="text-sm sm:text-base md:text-lg leading-relaxed">
+            <h4 className="text-sm sm:text-base md:text-lg leading-relaxed pb-[60px]">
               I am a dedicated front-end developer with a passion for designing and building exceptional digital
               experiences. I specialize in developing highly responsive and visually appealing web applications that
               provide seamless performance across all devices. With expertise in writing efficient and reusable React
