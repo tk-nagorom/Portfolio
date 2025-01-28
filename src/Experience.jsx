@@ -5,7 +5,7 @@ import javascript from '../portfolioimage/javascript.png';
 import react from '../portfolioimage/react.png';
 import tailwind from '../portfolioimage/tailwind.png';
 
-const Experien = () => {
+const Experience= () => {
   return (
     <div 
     id="Skill"

@@ -30,7 +30,7 @@ const About = () => {
           <motion.div
             initial={{ y: "100%" }} // Start off-screen to the right
             whileInView={{ y: 0 }} // Animate to its final position when in view
-            viewport={{ once: true, amount: 0.5 }} // Trigger animation once, when 50% of the text is in view
+            viewport={{ once: false, amount: 0.5 }}// Trigger animation once, when 50% of the text is in view
             transition={{
               type: "spring",
               stiffness: 50,
